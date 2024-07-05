@@ -1,0 +1,380 @@
+/* Estilos básicos para body y html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Estilos para el header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para el logo */
+.logo img {
+    height: 50px;
+}
+
+/* Estilos para la lista de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para los ítems de la lista */
+nav ul li {
+    margin: 10px 15px;
+}
+
+/* Estilos para los enlaces de navegación */
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilos para los enlaces al pasar el ratón */
+nav ul li a:hover {
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Estilos para la fecha y hora */
+.date-time {
+    font-size: 18px;
+}
+
+/* Estilos para el fondo de la página */
+.background {
+    background-image: url('img/fondoPantalla.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Para evitar que el fondo se desborde en pantallas pequeñas */
+}
+.background1 {
+    background-image: url('img/nacional.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Para evitar que el fondo se desborde en pantallas pequeñas */
+}
+
+
+/* Estilos para el contenido centrado */
+.contenido-centrado {
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la calculadora de envío */
+.calculadora {
+    text-align: center;
+}
+
+.calculadora h2 {
+    margin-bottom: 20px;
+}
+
+.selectores {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.selectores label {
+    margin-bottom: 5px;
+}
+
+.selectores select {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#botonCalcular {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#botonCalcular:hover {
+    background-color: #0056b3;
+}
+
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/* Estilos para el mensaje de bienvenida */
+.welcome-message {
+    background-color: #333;
+    color: white;
+    padding: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el mensaje esté en la parte superior */
+    display: none; /* Inicialmente oculto */
+}
+
+
+
+footer {
+    display: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 60px; /* Adjust based on your design needs */
+    background-color: #333; /* Example background color */
+    color: white; /* Example text color */
+    text-align: center; /* Ensure text is centered */
+    padding: 20px;
+    
+    
+}
+
+footer img{
+    width:20px;
+}
+/* Estilo para todo el cuerpo del documento */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Al menos el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+
+/* Estilo para el contenedor principal */
+.contenedor-principal {
+    flex: 1; /* Ocupa todo el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilo para el contenedor superior */
+.contenedor-superior {
+    text-align: center;
+}
+
+/* imagen que crece */
+.contenedor-imagen{
+    margin: auto;
+    display: inline-block;/*El contenedor se ajusta al tamaño de su contenido*/
+    overflow: hidden;/*evita que se muestren partes de la imagen fuera del contenedor*/
+}
+
+/* Estilo para el contenido dentro del contenedor superior */
+.contenido1 {
+    margin-bottom: 20px;
+    background-color:rgb(224, 217, 217);
+    padding: 0px 10px 30px;
+
+}
+
+/* Estilo para los encabezados h2 */
+.contenido1 h2 {
+    margin-bottom: 10px;
+}
+
+/* Estilo para los párrafos dentro del contenedor superior */
+.contenido1 p {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón */
+.boton1 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilo para la imagen que se muestra al clicar y aparece */
+.imagen1 {
+    display: none; /* Por defecto oculta */
+    margin-top: 20px;
+}
+
+/* Estilo para la imagen dentro del contenedor de imagen de clicar y aparece */
+.imagen1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* formulario de seguimiento */
+/*Para la validacion*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;/*ajusta la altura al 100%*/
+    background-color: #f9f9f9;
+    padding: 70px;/*espacio interno del contenido*/
+    box-shadow:  0 0 0 10px rgba(0, 0, 0, 0.1);/*sombra ligera*/
+    border-radius: 3px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+h1{
+    color: red;
+}
+
+.rojo{
+    color: red;
+}
+
+.errorInput{
+    border: 2px solid darkred;
+}
+
+.validoInput{
+    border: 2px solid darkgreen;
+}
+
+#registroForm{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.izquierda{
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;/*transicion suave*/
+}
+.derecha{
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;/*transicion suave*/
+}
+/*Estilos form*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;/*espacio entre los campos de introducción de datos*/
+}
+.form-group label{
+    flex: 1;/*ocupa todo el espacio posible*/
+    text-align: center;
+    margin-right: 10px;/*espacio derecho*/
+}
+.form-group input{
+    background-color: ghostwhite;
+    flex: 2;/*ocupa dos tercios del espacio*/
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;/*incluye borde y padding en tamaño*/
+}
+/*para los mensajes de error*/
+.msn{
+    color: red;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.izquierda:hover{
+    background-color: #BF452A;
+    border-radius: 10px;
+}
+.derecha:hover{
+    background-color: #BF452A;
+    border-radius: 10px;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    header {
+        flex-direction: column;/*cambia la direccion a columna*/
+        align-items: stretch;/*estira los elementos a lo largo del eje principal*/ 
+    }
+    .logo{
+        text-align: center;/*centrar el logo*/
+        margin-bottom: 10px;/*margen inferior para separar del menu*/
+    }
+    nav ul{
+        flex-direction: column;/*cambia la direccion a columna*/
+        gap: 10px;/*espacio entre elementos*/
+    }
+    nav ul li{
+        width: 100%;/*ancho completo para ocupar toda la pantalla*/
+        text-align: center;
+    }
+    nav ul li a{
+        padding: 10px 0;/*espacio interno*/
+        display: block;/*convertir en bloque para ocupar el ancho completo*/
+    }
+    .contenedor-principal{
+        flex-direction: column;
+        display: block;
+    }
+    .contenedor-superior{
+        flex-direction: column;
+        display: block;
+    }
+    }
+

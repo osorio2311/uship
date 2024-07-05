@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío Internacional</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="examenFinal.css">
+    <script defer src="examenFinal.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de la empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="envioNacional.html">Envío Nacional</a></li>
+                <li><a href="envioInternacional.html">Seguimiento</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><span id="hora-actual" class="date-time"></span></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background"></div>
+    </main>
+    <div class="contenedor-principal">
+        <div class="contenedor-superior">
+            <div class="contenido1">
+                <h2>RASTREE TUS ENVIOS</h2>
+                <P>Sigue los paquetes en cualquier momento con el servicio de seguimiento para envíos nacionales e internacionales. Introduce el número de seguimiento en el recuadro de la parte superior derecha de la página web, pulsa enviar y listo.</P>
+            </div>
+            <div class="contenedor-imagen">
+                <img src="img/imagenCrece.png" alt="Imagen entregar paquetería" id="image">
+            </div>
+        </div>
+    </div>
+    <div class="contenedor-principal">
+       
+
+    <form action="index.php" id="registroForm" onsubmit="return validarFormulario()">
+        <h2>FORMULARIO DE SEGUIMIENTO</h2>
+        <p class="form-group">
+            <label for="seguimiento">Seguimiento:<span class="rojo">*</span></label>
+            <input type="text" id="seguimiento" name="seguimiento">
+        </p>
+        <div class="seguimientoError rojo msn"></div>
+        <p>
+            <input type="submit" value="Registrar" class="boton izquierda">
+            <input type="reset" value="Borrar" class="boton derecha" id="reset">
+        </p>
+    </form>
+    </div>
+   
+    <footer>
+        <div>🔏©️José Luis Osorio González🔏</div>
+         <div><img src="img/instagram.png" alt="icono instagram">
+         joseluis.osorio.56863</div>
+     </footer>
+</body>
+</html>
